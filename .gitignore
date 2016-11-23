@@ -1,5 +1,7 @@
 ### App ###
 /dest
+pug
+!pug/layouts/
 /index.html
 
 ### Vim ###
