@@ -9,8 +9,8 @@ var $ = require('gulp-load-plugins')(),
 
 // Base paths
 var basePaths = {
-    assets: 'assets/',
-    dest: 'public/',
+    assets: 'src/',
+    dest: 'dest/',
     vendor: 'assets/vendor/',
 };
 
