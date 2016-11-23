@@ -54,6 +54,7 @@ gulp.task('build:scss', ['clean:css'], function() {
         .pipe($.debug({title: 'scss:build'}))
         .pipe($.sass({
             outputStyle: 'expand',
+            includePaths: 'vendor',
             outFile: paths.scss.destName 
         }))
         .on('error', $.sass.logError)
