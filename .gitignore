@@ -1,5 +1,6 @@
 ### App ###
 /dest
+/pug
 
 ### Vim ###
 # swap
@@ -23,3 +24,5 @@ node_modules
 # Yarn Integrity file
 .yarn-integrity
 
+### Bower ###
+/vendor
