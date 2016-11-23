@@ -1,0 +1,25 @@
+### App ###
+/dist
+
+### Vim ###
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
+
+### Node ###
+# Logs
+npm-debug.log*
+
+# Dependency directories
+node_modules
+
+# Yarn Integrity file
+.yarn-integrity
+
