@@ -58,4 +58,50 @@
     }
 }
 
+@mixin column($columns, $gutter: null) {
+    $width: 0;
 
+    @if unitless($columns) {
+        $width: percentage($columns / $max-columns);
+    } @else {
+        @error 'Mixin column() param \'$columns\' cannot have a unit';
+    }
+
+    display: inline-block;
+    width: $width;
+    float: left;
+
+    @if $gutter != null {
+        padding: {
+            left: $gutter;
+            right: $gutter;
+        }
+        box-sizing: border-box;
+    } 
+}
+
+@mixin column-row($width: $column-row-width, $gutter: $column-gutter, $center: true) {
+    @include clearfix;
+
+    @if $width != false {
+        @if unit($width) != 'rem' {
+            $width: rem(strip-units($width));
+        }
+
+        max-width: $width;
+    }
+
+    @if $center == true {
+        margin: {
+            left: auto;
+            right: auto;
+        }
+    }
+
+    @if $gutter != false {
+        padding: {
+            left: $gutter;
+            right: $gutter;
+        }
+    }
+}

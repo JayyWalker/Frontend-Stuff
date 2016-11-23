@@ -4,6 +4,10 @@
 // @author Jordan Walker <jordan@jayy.online>
 //
 
+$max-columns: 12;
+$column-gutter: rem(20);
+$column-row-width: rem(1200);
+
 $height-breakpoints: (
     small: 0,
     medium: 375,
