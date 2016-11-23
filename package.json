@@ -1,6 +1,23 @@
 {
-  "author": "Jordan Walker",
-  "license": "MIT",
+  "name": "frontend-stuff",
+  "description": "Frontend stuff I regularly use",
+  "version": "0.1.0",
+  "author": "JayyOnline <jordan@jayy.online>",
+  "homepage": "https://github.com/JayyWalker/Frontend-Stuff#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayyWalker/Frontend-Stuff.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JayyWalker/Frontend-Stuff/issues"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "frontend",
+    "javascript",
+    "sass"
+  ],
+  "main": "src/javascript/main.js",
   "devDependencies": {
     "del": "^2.2.1",
     "gulp": "^3.9.1",
@@ -25,6 +42,6 @@
   "scripts": {
     "build": "gulp build",
     "watch": "gulp watch",
-    "app": "npm install && bower install && gulp"
+    "setup": "npm install && bower install && gulp"
   }
 }
