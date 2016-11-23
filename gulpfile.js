@@ -35,11 +35,11 @@ var paths = {
     },
 
     pug: {
-        folder: basePaths.assets + 'pug/**/*.pug',
+        folder: 'pug/**/*.pug',
         src: [
-            'path/to/pug/files/here'
+            'pug/index.pug'
         ],
-        dest: basePaths.dest,
+        dest: '',
     },
 
     images: {
