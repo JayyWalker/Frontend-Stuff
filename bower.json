@@ -1,0 +1,23 @@
+{
+  "name": "frontend-stuff",
+  "description": "Frontend stuff I regularly use",
+  "main": "",
+  "authors": [
+    "Jordan Walker"
+  ],
+  "license": "UNLICENSED",
+  "keywords": [
+    "frontend",
+    "sass",
+    "javascript"
+  ],
+  "homepage": "https://github.com/JayyWalker/Frontend-Stuff",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
