@@ -1,0 +1,29 @@
+/* 
+ * --------------------------------------
+ * Add breakpoint at a height  
+ * --------------------------------------
+ * 
+ * @param type Two options:
+ *     1. 'max'
+ *     2. 'mix'
+ */
+@mixin HeightBreakpoint($px, $type: 'max') {
+    $max-or-min: 'max-height';
+
+    @if $type == 'min' {
+        $max-or-min: 'min-height';
+    }
+
+    $value: $px;
+
+    @if $px == small {
+        $value: map-get($height-breakpoints, small);
+
+    } @else if $px == medium {
+        $value: map-get($height-breakpoints, medium);
+    }
+
+    @media screen and (#{$max-or-min}: em($value)) {
+        @content;
+    }
+}
