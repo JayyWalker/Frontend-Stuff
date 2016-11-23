@@ -28,3 +28,30 @@
         @content;
     }
 }
+
+// 
+// --------------------------------------
+// Add breakpoint  
+// --------------------------------------
+// 
+// @param type Two options:
+//     1. 'max'
+//     2. 'mix'
+//
+@mixin Breakpoint($px, $type) {
+    $max-or-min: 'max-width';
+
+    @if $type == 'min' {
+        $max-or-min: 'min-width';
+    }
+
+    $value: $px;
+
+    @if type-of($px) == 'string' {
+        $value: map-get($breakpoints, $px);
+    }
+
+    @media screen and (#{$max-or-min}: em($value)) {
+        @content;
+    }
+}
